@@ -14,19 +14,26 @@ macOS/Linux:
 Mở trình quản lý tệp hoặc Terminal và điều hướng đến:
 ~/.vscode/extensions/
 Sau đó tìm thư mục có tên nhưgithub.copilot-chat-<version>
+
 Bước 2: Mở extension.jstệp
 Bên trong github.copilot-chat-<version>thư mục, mở distthư mục.
 Tìm tệp có tên extension.js.
 Mở tệp này bằng trình soạn thảo văn bản bạn thích (ví dụ: VS Code).
+
 Bước 3: Tìm Mã Tiêu đề
 Trong extension.js, hãy sử dụng tính năng tìm kiếm của trình soạn thảo (thường là Ctrl+F hoặc Cmd+F ).
 Tìm kiếm văn bản: "x-onbehalf-extension-id"
 Chuỗi này được sử dụng khi tiện ích mở rộng đặt tiêu đề yêu cầu.
+
 Bước 4: Xóa hoặc Bình luận Mã
 Khi bạn xác định được dòng hoặc khối mã thêm hoặc kiểm tra "x-onbehalf-extension-id"tiêu đề, bạn hãy xóa nó:
+
 Từ : 
+
 S==="getExtraHeaders"?function(){return{...f.getExtraHeaders?.()??{},"x-onbehalf-extension-id":`${A}/${c}`}}:S==="acquireTokenizer"?f.acquireTokenizer.bind(f):Reflect.get(f,S,D)
+
 Thành :
+
 S==="getExtraHeaders"?function(){return{...f.getExtraHeaders?.()??{}}}:S==="acquireTokenizer"?f.acquireTokenizer.bind(f):Reflect.get(f,S,D)
 
 Bước 5: Khởi động lại Visual Studio Code
