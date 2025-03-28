@@ -26,7 +26,6 @@
     Chuỗi này được sử dụng khi tiện ích mở rộng thiết lập request headers.  
   
  ### Bước 4: Xóa hoặc vô hiệu hóa đoạn mã  
- 1. Khi đ2. Lưu & khởi động lại VS Code  
  1. **Lưu** file `extension.js`.  
  2. **Đóng** tất cả cửa sổ VS Code.  
  3. **Mở lại** VS Code để áp dụng thay đổi.  
